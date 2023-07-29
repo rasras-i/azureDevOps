@@ -1,0 +1,12 @@
+# login to Azure by CLI
+az login --use-device-code
+# Create resource group RG
+    ##create local variable 
+    $LOCATION='eastus'
+    $RESOURCE_GROUP_NAME='python-flask-webapp-rg'
+    # Create a resource group
+    az group create --location $LOCATION --name $RESOURCE_GROUP_NAME
+# Create App Service Plan
+    $APP_SERVICE_PLAN_NAME='python-flask-webapp-plan'
+    
+az
